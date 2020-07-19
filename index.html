@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Веб студия</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Шапка сайту -->
+    <!-- В макеті названа верхньою лінією -->
+    <header class="header">
+      <div class="container">
+        <!-- Навігаційне меню сайту-->
+        <nav class="navigation-menu">
+          <!-- Логотип веб студії, який є посиланням на головну сторінку сайту -->
+          <a class="logo link" href="./index.html" lang="en"
+            >Web <span class="logo-second-part">Studio</span></a
+          >
+          <!-- Список посилань на інші сторінки сайту -->
+          <ul class="navigation-list list">
+            <!-- Посилання на головну сторінку -->
+            <li class="navigation-list-item">
+              <a
+                class="navigation-list-item-link current link"
+                href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <!-- Посилання на сторінку "Портфолио" -->
+            <li class="navigation-list-item">
+              <a class="navigation-list-item-link link" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <!-- Посилання на сторінку "Контакты" -->
+            <li class="navigation-list-item">
+              <a class="navigation-list-item-link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Список контактних даних веб студії -->
+        <ul class="contacts-list list">
+          <!-- Електронна пошта -->
+          <li class="contacts-list-item">
+            <a
+              class="contacts-list-item-link link"
+              href="mailto:info@devstudio.com"
+              aria-label="Электронная почта"
+              >info@devstudio.com</a
+            >
+          </li>
+          <!-- Мобільний телефон -->
+          <li class="contacts-list-item">
+            <a
+              class="contacts-list-item-link link"
+              href="tel:+380961111111"
+              aria-label="Мобильный телефон"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Оригінальний вміст основної сторінки сайту -->
+    <main>
+      <!-- Основна секція, секція-герой -->
+      <!-- В макеті помилково названа шапкою сайту -->
+      <section class="hero-section">
+        <h1 class="hero-section-title">
+          Эффективные решения<br />для вашего бизнеса
+        </h1>
+        <button class="modal-window-button" type="button">
+          Заказать услугу
+        </button>
+      </section>
+
+      <!-- Секція особливостей -->
+      <section class="section features-section">
+        <div class="container">
+          <!-- Відсутній на макеті заголовок секції особливостей-->
+          <h2 class="section-title" hidden>Особенности</h2>
+          <!-- Перелік особливостей роботи вебстудії -->
+          <ul class="features-list list">
+            <!-- Особливість 1 -->
+            <li class="features-list-item">
+              <img
+                class="features-list-item-image"
+                src="./images/features-section/feature-1.svg"
+                alt="Антенна"
+              />
+              <h3 class="features-list-item-title">Внимание к деталям</h3>
+              <p class="features-list-item-description">
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
+            <!-- Особливість 2 -->
+            <li class="features-list-item">
+              <img
+                class="features-list-item-image"
+                src="./images/features-section/feature-2.svg"
+                alt="Часы"
+              />
+              <h3 class="features-list-item-title">Пунктуальность</h3>
+              <p class="features-list-item-description">
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
+              </p>
+            </li>
+            <!-- Особливість 3 -->
+            <li class="features-list-item">
+              <img
+                class="features-list-item-image"
+                src="./images/features-section/feature-3.svg"
+                alt="Диаграмма"
+              />
+              <h3 class="features-list-item-title">Планирование</h3>
+              <p class="features-list-item-description">
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
+            <!-- Особливість 4 -->
+            <li class="features-list-item">
+              <img
+                class="features-list-item-image"
+                src="./images/features-section/feature-4.svg"
+                alt="Астронавт"
+              />
+              <h3 class="features-list-item-title">Современные технологии</h3>
+              <p class="features-list-item-description">
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Секція занять -->
+      <section class="section services-section">
+        <div class="container">
+          <h2 class="section-title">Чем мы занимаемся</h2>
+          <!-- Перелік послуг, які надає веб студія -->
+          <ul class="services-list list">
+            <!-- Послуга 1 -->
+            <li class="services-list-item">
+              <img
+                class="services-list-item-image"
+                src="./images/services-section/desktop-applications.jpg"
+                alt="Ноутбук"
+                width="370"
+                height="294"
+              />
+              <h3 class="services-list-item-title">Десктопные приложения</h3>
+            </li>
+            <!-- Послуга 2 -->
+            <li class="services-list-item">
+              <img
+                class="services-list-item-image"
+                src="./images/services-section/mobile-applications.jpg"
+                alt="Мобильный телефон"
+                width="370"
+                height="294"
+              />
+              <h3 class="services-list-item-title">Мобильные приложения</h3>
+            </li>
+            <!-- Послуга 3 -->
+            <li class="services-list-item">
+              <img
+                class="services-list-item-image"
+                src="./images/services-section/design-solutions.jpg"
+                alt="Монитор"
+                width="370"
+                height="294"
+              />
+              <h3 class="services-list-item-title">Дизайнерские решения</h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Секція команди -->
+      <section class="section team-section">
+        <div class="container">
+          <h2 class="section-title">Наша команда</h2>
+          <!-- Список працівників веб студії -->
+          <ul class="team-list list">
+            <!-- Перший працівник -->
+            <li class="team-list-item">
+              <img
+                class="team-list-item-image"
+                src="./images/team-section/team-card-1.jpg"
+                alt="Продуктовый дизайнер"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-list-item-title">Николай Кучеренко</h3>
+              <p class="team-list-item-description" lang="en">
+                Product Designer
+              </p>
+              <!-- Список посилань на профілі працівника в соціальних мережах -->
+              <ul class="worker-social-networks-pages-list list">
+                <!-- Посилання на сторінку працівника в соціальні мережі Інстаграм -->
+                <li class="worker-social-networks-pages-list-item">
+                  <a
+                    class="worker-social-networks-pages-list-item-link link"
+                    href=""
+                    aria-label="Ссылка на страницу работника в социальной сети Инстаграм"
+                    ><img
+                      src="./images/team-section/social-networks/instagram-logo-1.svg"
+                      alt="Иконка социальной сети Инстаграм"
+                  /></a>
+                </li>
+                <!-- Посилання на сторінку працівника в соціальні мережі Твіттер -->
+                <li class="worker-social-networks-pages-list-item">
+                  <a
+                    class="worker-social-networks-pages-list-item-link link"
+                    href=""
+                    aria-label="Ссылка на страницу работника в социальной сети Твиттер"
+                    ><img
+                      src="./images/team-section/social-networks/twitter-logo-1.svg"
+                      alt="Иконка социальной сети Твиттер"
+                  /></a>
+                </li>
+                <!-- Посилання на сторінку працівника в соціальні мережі Фейсбук -->
+                <li class="worker-social-networks-pages-list-item">
+                  <a
+                    class="worker-social-networks-pages-list-item-link link"
+                    href=""
+                    aria-label="Ссылка на страницу работника в социальной сети Фейсбук"
+                    ><img
+                      src="./images/team-section/social-networks/facebook-logo-1.svg"
+                      alt="Иконка социальной сети Фейсбук"
+                  /></a>
+                </li>
+                <!-- Посилання на сторінку працівника в соціальні мережі Лінкедін -->
+                <li class="worker-social-networks-pages-list-item">
+                  <a
+                    class="worker-social-networks-pages-list-item-link link"
+                    href=""
+                    aria-label="Ссылка на страницу работника в социальной сети Линкедин"
+                    ><img
+                      src="./images/team-section/social-networks/linkedin-logo-1.svg"
+                      alt="Иконка социальной сети Линкедин"
+                  /></a>
+                </li>
+              </ul>
+            </li>
+            <!-- Другий працівник -->
+            <li class="team-list-item">
+              <img
+                class="team-list-item-image"
+                src="./images/team-section/team-card-2.jpg"
+                alt="Фронтенд разработчик"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-list-item-title">Ольга Иванова</h3>
+              <p class="team-list-item-description" lang="en">
+                Frontend Developer
+              </p>
+              <!-- Список посилань на профілі працівника в соціальних мережах -->
+              <ul class="worker-social-networks-pages-list list">
+                <!-- Посилання на сторінку працівника в соціальні мережі Інстаграм -->
+                <li class="worker-social-networks-pages-list-item">
+                  <a
+                    class="worker-social-networks-pages-list-item-link link"
+                    href=""
+                    aria-label="Ссылка на страницу работника в социальной сети Инстаграм"
+                    ><img
+                      src="./images/team-section/social-networks/instagram-logo-1.svg"
+                      alt="Иконка социальной сети Инстаграм"
+                  /></a>
+                </li>
+                <!-- Посилання на сторінку працівника в соціальні мережі Твіттер -->
+                <li class="worker-social-networks-pages-list-item">
+                  <a
+                    class="worker-social-networks-pages-list-item-link link"
+                    href=""
+                    aria-label="Ссылка на страницу работника в социальной сети Твиттер"
+                    ><img
+                      src="./images/team-section/social-networks/twitter-logo-1.svg"
+                      alt="Иконка социальной сети Твиттер"
+                  /></a>
+                </li>
+                <!-- Посилання на сторінку працівника в соціальні мережі Фейсбук -->
+                <li class="worker-social-networks-pages-list-item">
+                  <a
+                    class="worker-social-networks-pages-list-item-link link"
+                    href=""
+                    aria-label="Ссылка на страницу работника в социальной сети Фейсбук"
+                    ><img
+                      src="./images/team-section/social-networks/facebook-logo-1.svg"
+                      alt="Иконка социальной сети Фейсбук"
+                  /></a>
+                </li>
+                <!-- Посилання на сторінку працівника в соціальні мережі Лінкедін -->
+                <li class="worker-social-networks-pages-list-item">
+                  <a
+                    class="worker-social-networks-pages-list-item-link link"
+                    href=""
+                    aria-label="Ссылка на страницу работника в социальной сети Линкедин"
+                    ><img
+                      src="./images/team-section/social-networks/linkedin-logo-1.svg"
+                      alt="Иконка социальной сети Линкедин"
+                  /></a>
+                </li>
+              </ul>
+            </li>
+            <!-- Третій працівник -->
+            <li class="team-list-item">
+              <img
+                class="team-list-item-image"
+                src="./images/team-section/team-card-3.jpg"
+                alt="Маркетолог"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-list-item-title">Андрей Шевченко</h3>
+              <p class="team-list-item-description" lang="en">Marketing</p>
+              <!-- Список посилань на профілі працівника в соціальних мережах -->
+              <ul class="worker-social-networks-pages-list list">
+                <!-- Посилання на сторінку працівника в соціальні мережі Інстаграм -->
+                <li class="worker-social-networks-pages-list-item">
+                  <a
+                    class="worker-social-networks-pages-list-item-link link"
+                    href=""
+                    aria-label="Ссылка на страницу работника в социальной сети Инстаграм"
+                    ><img
+                      src="./images/team-section/social-networks/instagram-logo-1.svg"
+                      alt="Иконка социальной сети Инстаграм"
+                  /></a>
+                </li>
+                <!-- Посилання на сторінку працівника в соціальні мережі Твіттер -->
+                <li class="worker-social-networks-pages-list-item">
+                  <a
+                    class="worker-social-networks-pages-list-item-link link"
+                    href=""
+                    aria-label="Ссылка на страницу работника в социальной сети Твиттер"
+                    ><img
+                      src="./images/team-section/social-networks/twitter-logo-1.svg"
+                      alt="Иконка социальной сети Твиттер"
+                  /></a>
+                </li>
+                <!-- Посилання на сторінку працівника в соціальні мережі Фейсбук -->
+                <li class="worker-social-networks-pages-list-item">
+                  <a
+                    class="worker-social-networks-pages-list-item-link link"
+                    href=""
+                    aria-label="Ссылка на страницу работника в социальной сети Фейсбук"
+                    ><img
+                      src="./images/team-section/social-networks/facebook-logo-1.svg"
+                      alt="Иконка социальной сети Фейсбук"
+                  /></a>
+                </li>
+                <!-- Посилання на сторінку працівника в соціальні мережі Лінкедін -->
+                <li class="worker-social-networks-pages-list-item">
+                  <a
+                    class="worker-social-networks-pages-list-item-link link"
+                    href=""
+                    aria-label="Ссылка на страницу работника в социальной сети Линкедин"
+                    ><img
+                      src="./images/team-section/social-networks/linkedin-logo-1.svg"
+                      alt="Иконка социальной сети Линкедин"
+                  /></a>
+                </li>
+              </ul>
+            </li>
+            <!-- Четвертий працівник -->
+            <li class="team-list-item">
+              <img
+                class="team-list-item-image"
+                src="./images/team-section/team-card-4.jpg"
+                alt="Дизайнер интерфейсов"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-list-item-title">Иван Николаев</h3>
+              <p class="team-list-item-description" lang="en">UI Designer</p>
+              <!-- Список посилань на профілі працівника в соціальних мережах -->
+              <ul class="worker-social-networks-pages-list list">
+                <!-- Посилання на сторінку працівника в соціальні мережі Інстаграм -->
+                <li class="worker-social-networks-pages-list-item">
+                  <a
+                    class="worker-social-networks-pages-list-item-link link"
+                    href=""
+                    aria-label="Ссылка на страницу работника в социальной сети Инстаграм"
+                    ><img
+                      src="./images/team-section/social-networks/instagram-logo-1.svg"
+                      alt="Иконка социальной сети Инстаграм"
+                  /></a>
+                </li>
+                <!-- Посилання на сторінку працівника в соціальні мережі Твіттер -->
+                <li class="worker-social-networks-pages-list-item">
+                  <a
+                    class="worker-social-networks-pages-list-item-link link"
+                    href=""
+                    aria-label="Ссылка на страницу работника в социальной сети Твиттер"
+                    ><img
+                      src="./images/team-section/social-networks/twitter-logo-1.svg"
+                      alt="Иконка социальной сети Твиттер"
+                  /></a>
+                </li>
+                <!-- Посилання на сторінку працівника в соціальні мережі Фейсбук -->
+                <li class="worker-social-networks-pages-list-item">
+                  <a
+                    class="worker-social-networks-pages-list-item-link link"
+                    href=""
+                    aria-label="Ссылка на страницу работника в социальной сети Фейсбук"
+                    ><img
+                      src="./images/team-section/social-networks/facebook-logo-1.svg"
+                      alt="Иконка социальной сети Фейсбук"
+                  /></a>
+                </li>
+                <!-- Посилання на сторінку працівника в соціальні мережі Лінкедін -->
+                <li class="worker-social-networks-pages-list-item">
+                  <a
+                    class="worker-social-networks-pages-list-item-link link"
+                    href=""
+                    aria-label="Ссылка на страницу работника в социальной сети Линкедин"
+                    ><img
+                      src="./images/team-section/social-networks/linkedin-logo-1.svg"
+                      alt="Иконка социальной сети Линкедин"
+                  /></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Секція постійних клієнтів -->
+      <section class="section customers-section">
+        <div class="container">
+          <h2 class="section-title">Постоянные клиенты</h2>
+          <!-- Список постійних клієнтів -->
+          <ul class="customers-list list">
+            <!-- Постійний клієнт 1 -->
+            <li class="customers-list-item">
+              <a class="customers-list-item-link link" href=""
+                ><img
+                  class="customers-list-item-link-image"
+                  src="./images/customers-section/customer-1-logo.svg"
+                  alt="Логотип постоянного клиента 1"
+              /></a>
+            </li>
+            <!-- Постійний клієнт 2 -->
+            <li class="customers-list-item">
+              <a class="customers-list-item-link link" href=""
+                ><img
+                  class="customers-list-item-link-image"
+                  src="./images/customers-section/customer-2-logo.svg"
+                  alt="Логотип постоянного клиента 2"
+              /></a>
+            </li>
+            <!-- Постійний клієнт 3 -->
+            <li class="customers-list-item">
+              <a class="customers-list-item-link link" href=""
+                ><img
+                  class="customers-list-item-link-image"
+                  src="./images/customers-section/customer-3-logo.svg"
+                  alt="Логотип постоянного клиента 3"
+              /></a>
+            </li>
+            <!-- Постійний клієнт 4 -->
+            <li class="customers-list-item">
+              <a class="customers-list-item-link link" href=""
+                ><img
+                  class="customers-list-item-link-image"
+                  src="./images/customers-section/customer-4-logo.svg"
+                  alt="Логотип постоянного клиента 4"
+              /></a>
+            </li>
+            <!-- Постійний клієнт 5 -->
+            <li class="customers-list-item">
+              <a class="customers-list-item-link link" href=""
+                ><img
+                  class="customers-list-item-link-image"
+                  src="./images/customers-section/customer-5-logo.svg"
+                  alt="Логотип постоянного клиента 5"
+              /></a>
+            </li>
+            <!-- Постійний клієнт 6 -->
+            <li class="customers-list-item">
+              <a class="customers-list-item-link link" href=""
+                ><img
+                  class="customers-list-item-link-image"
+                  src="./images/customers-section/customer-6-logo.svg"
+                  alt="Логотип постоянного клиента 6"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Підвал сайту -->
+    <footer class="footer">
+      <div class="container">
+        <!-- Блок-обгортка для подальшої стилізації -->
+        <div class="contacts-block">
+          <!-- Логотип веб студії, який є посиланням на головну сторінку сайту -->
+          <a class="logo link" href="./index.html" lang="en"
+            >Web <span class="logo-second-part">Studio</span></a
+          >
+          <!-- Контактні дані веб студії -->
+          <address class="address">
+            <!-- Список контактів -->
+            <ul class="contact-data-list list">
+              <!-- Фізична адреса веб студії -->
+              <li class="contact-data-list-item">
+                <a
+                  class="contact-data-list-item-link physical-address link"
+                  href="https://goo.gl/maps/4vaiXXMEc3k6XGQo9"
+                  target="_blank"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <!-- Електронна адреса веб студії -->
+              <li class="contact-data-list-item">
+                <a
+                  class="contact-data-list-item-link link"
+                  href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <!-- Мобільний телефон веб студії -->
+              <li class="contact-data-list-item">
+                <a
+                  class="contact-data-list-item-link link"
+                  href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <!-- Блок-обгортка для подальшої стилізації -->
+        <div class="social-networks-block">
+          <!-- Заклик до дії -->
+          <b class="call-to-action">присоединяйтесь</b>
+          <!-- Список посилань на профілі веб студії в соціальних мережах -->
+          <ul class="studio-social-networks-pages-list list">
+            <!-- Посилання на сторінку веб студії в соціальній мережі Інстаграм -->
+            <li class="studio-social-networks-pages-list-item">
+              <a
+                class="studio-social-networks-pages-list-item-link link"
+                href=""
+                aria-label="Ccылка на страницу веб студии в социальной сети Инстаграм"
+                ><img
+                  src="./images/footer/instagram-logo-2.svg"
+                  alt="Иконка социальной сети Инстаграм"
+              /></a>
+            </li>
+            <!-- Посилання на сторінку веб студії в соціальній мережі Твіттер -->
+            <li class="studio-social-networks-pages-list-item">
+              <a
+                class="studio-social-networks-pages-list-item-link link"
+                href=""
+                aria-label="Ccылка на страницу веб студии в социальной сети Твиттер"
+                ><img
+                  src="./images/footer/twitter-logo-2.svg"
+                  alt="Иконка социальной сети Твиттер"
+              /></a>
+            </li>
+            <!-- Посилання на сторінку веб студії в соціальній мережі Фейсбук -->
+            <li class="studio-social-networks-pages-list-item">
+              <a
+                class="studio-social-networks-pages-list-item-link link"
+                href=""
+                aria-label="Ccылка на страницу веб студии в социальной сети Фейсбук"
+                ><img
+                  src="./images/footer/facebook-logo-2.svg"
+                  alt="Иконка социальной сети Фейсбук"
+              /></a>
+            </li>
+            <!-- Посилання на сторінку веб студії в соціальній мережі Лінкедін -->
+            <li class="studio-social-networks-pages-list-item">
+              <a
+                class="studio-social-networks-pages-list-item-link link"
+                href=""
+                aria-label="Ccылка на страницу веб студии в социальной сети Линкедин"
+                ><img
+                  src="./images/footer/linkedin-logo-2.svg"
+                  alt="Иконка социальной сети Линкедин"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
