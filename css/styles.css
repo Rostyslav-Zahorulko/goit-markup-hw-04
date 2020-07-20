@@ -45,6 +45,7 @@ body {
 /* Header */
 
 .header {
+  border-bottom: 1px solid #ececec;
   background-color: var(--primaty-background-color);
 }
 
