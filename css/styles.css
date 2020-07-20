@@ -222,15 +222,31 @@ body {
   margin-right: 30px;
 }
 
-.features-list-item-image {
-  padding-top: 25px;
-  padding-right: 100px;
-  padding-bottom: 25px;
-  padding-left: 100px;
+.features-list-item::before {
+  content: '';
+  display: block;
+  height: 120px;
   margin-bottom: 30px;
-  border-radius: 4px;
 
-  background: #f5f4fa;
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-attention::before {
+  background-image: url(../images/features-section/feature-1.svg);
+}
+
+.icon-punctuality::before {
+  background-image: url(../images/features-section/feature-2.svg);
+}
+
+.icon-planning::before {
+  background-image: url(../images/features-section/feature-3.svg);
+}
+
+.icon-technologies::before {
+  background-image: url(../images/features-section/feature-4.svg);
 }
 
 .features-list-item-title {
