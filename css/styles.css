@@ -102,16 +102,6 @@ body {
   margin-right: 50px;
 }
 
-.contacts-list {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
-.contacts-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .navigation-list-item-link,
 .contacts-list-item-link {
   display: block;
@@ -124,10 +114,6 @@ body {
   color: var(--primary-text-color);
 }
 
-.contacts-list .contacts-list-item-link {
-  color: var(--secondary-text-color);
-}
-
 .navigation-list-item-link.current {
   color: #2196f3;
 }
@@ -137,6 +123,42 @@ body {
 .contacts-list-item-link:hover,
 .contacts-list-item-link:focus {
   color: var(--accent-color);
+}
+
+.contacts-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.contacts-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contacts-list-item-link {
+  color: var(--secondary-text-color);
+}
+
+.contacts-list-item-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.contacts-list-item-link::before {
+  content: '';
+  margin-right: 10px;
+}
+
+.icon-mail::before {
+  width: 16px;
+  height: 11.2px;
+  background-image: url(../images/header/envelope.svg);
+}
+
+.icon-mobile::before {
+  width: 10px;
+  height: 14.94px;
+  background-image: url(../images/header/smartphone.svg);
 }
 
 /* Main */
