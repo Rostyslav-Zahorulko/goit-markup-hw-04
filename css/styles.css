@@ -562,9 +562,8 @@ body {
 
 .works-list-item {
   width: calc((100% - 60px) / 3);
-  border: 1px solid #eeeeee;
 
-  background: #ffffff;
+  background-color: #ffffff;
   /* outline: 2px solid goldenrod; */
 }
 
@@ -584,11 +583,19 @@ body {
 
 .works-list-item-link-image {
   display: block;
-  margin-bottom: 20px;
+}
+
+.works-list-item-link-information {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .works-list-item-link-title {
-  padding-left: 24px;
   margin-top: 0;
   margin-bottom: 4px;
 
@@ -600,8 +607,6 @@ body {
 }
 
 .works-list-item-link-definition {
-  padding-bottom: 20px;
-  padding-left: 24px;
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 400;
