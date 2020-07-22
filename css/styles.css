@@ -147,12 +147,10 @@ body {
 }
 
 .contacts-list-item-link {
-  color: var(--secondary-text-color);
-}
-
-.contacts-list-item-link {
   display: inline-flex;
   align-items: center;
+
+  color: var(--secondary-text-color);
 }
 
 .contacts-list-item-link::before {
@@ -190,9 +188,7 @@ body {
       rgba(47, 48, 58, 0.8)
     ),
     url(../images/hero-section/hero-section-image.jpg);
-  background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
 }
 
 .hero-section-title {
@@ -288,7 +284,8 @@ body {
 
   font-size: 14px;
   font-weight: 700;
-  line-height: 1.14;
+  line-height: 1.1428;
+  /* line-height: 16px; */
   text-transform: uppercase;
 }
 
@@ -297,7 +294,8 @@ body {
   margin-bottom: 0;
 
   font-weight: 400;
-  line-height: 1.71;
+  line-height: 1.7142;
+  /* line-height: 24px; */
   color: var(--secondary-text-color);
 }
 
@@ -396,6 +394,32 @@ body {
   margin-right: 10px;
 }
 
+.worker-social-networks-pages-list-item-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.instagram {
+  background-image: url(../images/team-section/social-networks/instagram-logo-1.svg);
+}
+
+.twitter {
+  background-image: url(../images/team-section/social-networks/twitter-logo-1.svg);
+}
+
+.facebook {
+  background-image: url(../images/team-section/social-networks/facebook-logo-1.svg);
+}
+
+.linkedin {
+  background-image: url(../images/team-section/social-networks/linkedin-logo-1.svg);
+}
+
 /* Customers section */
 
 .customers-section {
@@ -485,6 +509,7 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50px;
+
   background-color: rgba(255, 255, 255, 0.1);
   background-repeat: no-repeat;
   background-position: center;
@@ -564,7 +589,6 @@ body {
   width: calc((100% - 60px) / 3);
 
   background-color: #ffffff;
-  /* outline: 2px solid goldenrod; */
 }
 
 .works-list-item:not(:nth-child(3n)) {
