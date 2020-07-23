@@ -508,36 +508,24 @@ body {
 }
 
 .studio-social-networks-pages-list-item-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  border-radius: 50px;
+  border-radius: 50%;
 
   background-color: rgba(255, 255, 255, 0.1);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px 20px;
-}
-
-.studio-social-networks-pages-list-item-link.icon-instagram {
-  background-image: url(../images/footer/instagram-logo-2.svg);
-}
-
-.studio-social-networks-pages-list-item-link.icon-twitter {
-  background-image: url(../images/footer/twitter-logo-2.svg);
-}
-
-.studio-social-networks-pages-list-item-link.icon-facebook {
-  background-image: url(../images/footer/facebook-logo-2.svg);
-}
-
-.studio-social-networks-pages-list-item-link.icon-linkedin {
-  background-image: url(../images/footer/linkedin-logo-2.svg);
 }
 
 .studio-social-networks-pages-list-item-link:hover,
 .studio-social-networks-pages-list-item-link:focus {
   background-color: var(--accent-color);
+}
+
+.social-networks-logo-footer {
+  width: 20px;
+  height: 20px;
 }
 
 /* PORTFOLIO */
