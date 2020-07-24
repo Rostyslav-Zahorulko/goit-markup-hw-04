@@ -153,21 +153,30 @@ body {
   color: var(--secondary-text-color);
 }
 
-.contacts-list-item-link::before {
-  content: '';
+.icon-envelope {
   margin-right: 10px;
-}
-
-.icon-mail::before {
   width: 16px;
   height: 11.2px;
-  background-image: url(../images/header/envelope.svg);
+
+  fill: var(--secondary-text-color);
 }
 
-.icon-mobile::before {
+.icon-smartphone {
+  margin-right: 10px;
   width: 10px;
   height: 14.94px;
-  background-image: url(../images/header/smartphone.svg);
+
+  fill: var(--secondary-text-color);
+}
+
+.contacts-list-item-link:hover .icon-envelope,
+.contacts-list-item-link:focus .icon-envelope {
+  fill: var(--accent-color);
+}
+
+.contacts-list-item-link:hover .icon-smartphone,
+.contacts-list-item-link:focus .icon-smartphone {
+  fill: var(--accent-color);
 }
 
 /* Main */
@@ -265,19 +274,19 @@ body {
 }
 
 .icon-attention::before {
-  background-image: url(../images/features-section/feature-1.svg);
+  background-image: url(../images/features-section/feature-1-icon.svg);
 }
 
 .icon-punctuality::before {
-  background-image: url(../images/features-section/feature-2.svg);
+  background-image: url(../images/features-section/feature-2-icon.svg);
 }
 
 .icon-planning::before {
-  background-image: url(../images/features-section/feature-3.svg);
+  background-image: url(../images/features-section/feature-3-icon.svg);
 }
 
 .icon-technologies::before {
-  background-image: url(../images/features-section/feature-4.svg);
+  background-image: url(../images/features-section/feature-4-icon.svg);
 }
 
 .features-list-item-title {
@@ -396,31 +405,18 @@ body {
   margin-right: 10px;
 }
 
-.worker-social-networks-pages-list-item-link {
-  display: block;
+.social-networks-pages-list-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  border-radius: 50px;
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px 20px;
+  border-radius: 50%;
 }
 
-.instagram {
-  background-image: url(../images/team-section/social-networks/instagram-logo-1.svg);
-}
-
-.twitter {
-  background-image: url(../images/team-section/social-networks/twitter-logo-1.svg);
-}
-
-.facebook {
-  background-image: url(../images/team-section/social-networks/facebook-logo-1.svg);
-}
-
-.linkedin {
-  background-image: url(../images/team-section/social-networks/linkedin-logo-1.svg);
+.social-network-logo {
+  width: 20px;
+  height: 20px;
 }
 
 /* Customers section */
@@ -507,25 +503,13 @@ body {
   margin-right: 10px;
 }
 
-.studio-social-networks-pages-list-item-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-
+.studio-social-networks-pages-list .social-networks-pages-list-item-link {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.studio-social-networks-pages-list-item-link:hover,
-.studio-social-networks-pages-list-item-link:focus {
+.studio-social-networks-pages-list .social-networks-pages-list-item-link:hover,
+.studio-social-networks-pages-list .social-networks-pages-list-item-link:focus {
   background-color: var(--accent-color);
-}
-
-.social-networks-logo-footer {
-  width: 20px;
-  height: 20px;
 }
 
 /* PORTFOLIO */
