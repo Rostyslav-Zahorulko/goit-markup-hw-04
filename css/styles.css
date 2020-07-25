@@ -80,6 +80,7 @@ body {
 
 .link {
   text-decoration: none;
+  outline: none;
 }
 
 .logo-second-part {
@@ -226,6 +227,7 @@ body {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  outline: none;
 }
 
 .modal-window-button {
@@ -613,8 +615,12 @@ body {
   margin-bottom: 30px;
 }
 
-.works-list-item:hover,
-.works-list-item:focus {
+.works-list-item-link {
+  display: block;
+}
+
+.works-list-item-link:hover,
+.works-list-item-link:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
 }
