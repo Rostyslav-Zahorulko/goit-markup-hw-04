@@ -444,6 +444,11 @@ body {
   border-radius: 4px;
 }
 
+.customers-list-item-link:hover,
+.customers-list-item-link:focus {
+  border-color: var(--accent-color);
+}
+
 .customers-list-item-link:hover .customer-logo,
 .customers-list-item-link:focus .customer-logo {
   fill: var(--accent-color);
