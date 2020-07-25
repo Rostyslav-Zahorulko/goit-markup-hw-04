@@ -262,31 +262,20 @@ body {
   margin-right: 30px;
 }
 
-.features-list-item::before {
-  content: '';
-  display: block;
+.feature-icon-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 120px;
   margin-bottom: 30px;
+  border-radius: 4px;
 
   background-color: #f5f4fa;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.icon-attention::before {
-  background-image: url(../images/features-section/feature-1-icon.svg);
-}
-
-.icon-punctuality::before {
-  background-image: url(../images/features-section/feature-2-icon.svg);
-}
-
-.icon-planning::before {
-  background-image: url(../images/features-section/feature-3-icon.svg);
-}
-
-.icon-technologies::before {
-  background-image: url(../images/features-section/feature-4-icon.svg);
+.feature-icon {
+  width: 70px;
+  height: 70px;
 }
 
 .features-list-item-title {
