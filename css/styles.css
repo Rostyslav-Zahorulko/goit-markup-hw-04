@@ -452,6 +452,15 @@ body {
   border-radius: 4px;
 }
 
+.customers-list-item-link:hover .customer-logo,
+.customers-list-item-link:focus .customer-logo {
+  fill: var(--accent-color);
+}
+
+.customer-logo {
+  fill: #afb1b8;
+}
+
 /* Footer */
 
 .footer {
