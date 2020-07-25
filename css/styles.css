@@ -414,9 +414,21 @@ body {
   border-radius: 50%;
 }
 
+.social-networks-pages-list-item-link:hover,
+.social-networks-pages-list-item-link:focus {
+  background-color: var(--accent-color);
+}
+
 .social-network-logo {
   width: 20px;
   height: 20px;
+
+  fill: #afb1b8;
+}
+
+.social-networks-pages-list-item-link:hover .social-network-logo,
+.social-networks-pages-list-item-link:focus .social-network-logo {
+  fill: #ffffff;
 }
 
 /* Customers section */
