@@ -533,6 +533,10 @@ body {
   background-color: var(--accent-color);
 }
 
+.studio-social-networks-pages-list .social-network-logo {
+  fill: #ffffff;
+}
+
 /* PORTFOLIO */
 
 .works-section {
