@@ -44,9 +44,8 @@ body {
 
 /* Header */
 
-.header {
-  border-bottom: 1px solid #ececec;
-  background-color: var(--primaty-background-color);
+.works-section {
+  /* border-top: 1px solid #ececec; */
 }
 
 .container {
@@ -544,6 +543,10 @@ body {
 }
 
 /* PORTFOLIO */
+
+.header.portfolio-header {
+  border-bottom: 1px solid #ececec;
+}
 
 .works-section {
   padding-top: 93px;
